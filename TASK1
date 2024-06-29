@@ -1,1 +1,22 @@
+greetings = ["hi", "hello", "hey"]
+questions = ["how are you", "what's up?"]
+responses = ["I'm doing well, thanks for asking!", "Just hanging out, waiting to chat!"]
+farewells = ["bye", "goodbye", "see you later"]
 
+
+def respond(message):
+  message = message.lower()
+  if message in greetings:
+    return "Hey there!"
+  elif message in questions:
+    return responses[0]  # Choose a random response from responses list
+  elif message in farewells:
+    return "See you later!"
+  else:
+    return "I don't understand, but it sounds interesting!"
+
+while True:
+  user_input = input("You: ")
+  if user_input.lower() == "quit":
+    break
+  print("Chatbot:", respond(user_input))
