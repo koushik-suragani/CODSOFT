@@ -1,5 +1,4 @@
 def main():
-# The main function
     introduction = intro()
     board = create_grid()
     pretty = printPretty(board)
@@ -11,7 +10,6 @@ def main():
 
 
 def intro():
-# This function introduces the rules of the game Tic Tac Toe
     print("Hello! Welcome to Pam's Tic Tac Toe game!")
     print("\n")
     print("Rules: Player 1 and player 2, represented by X and O, take turns "
@@ -24,7 +22,6 @@ def intro():
 
 
 def create_grid():
-# This function creates a blank playboard
     print("Here is the playboard: ")
     board = [[" ", " ", " "],
              [" ", " ", " "],
